@@ -1,0 +1,5 @@
+tippecanoe -o ./scratch/tiles.mbtiles -zg -pk -pC -pS -pt ./tools/orp_data.json
+
+mb-util ./scratch/tiles.mbtiles ./tiles --image_format=pbf
+
+aws s3 cp ./tiles s3://datarozhlas/bytova-nouze/tiles --recursive --acl public-read
