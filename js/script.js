@@ -55,11 +55,11 @@ map.on('load', function() {
         'source-layer': 'orp_data',
         paint: {
             'fill-color': [
-                'case', 
+                'case',
                 ['has', 'nouze_rodiny'],
                 [
-                    'interpolate', 
-                    ['linear'], 
+                    'interpolate',
+                    ['linear'],
                     ['/', ['get', cuts[topic][0]], ['get', cuts[topic][1]]],
                     breaks[topic][0], colors[topic][0],
                     breaks[topic][1], colors[topic][1],
@@ -68,7 +68,7 @@ map.on('load', function() {
                     breaks[topic][4], colors[topic][4],
                 ],
                 'white',
-            ], 
+            ],
             "fill-opacity": 0.8,
             "fill-outline-color": "hsla(0, 0%, 52%, 0.4)",
         }
@@ -94,9 +94,9 @@ map.on('load', function() {
                 if (topic != 'Osoby bez přístřeší') {
                     txt += ', tedy ' + d[0].properties[cuts[topic][3]] + ' osob včetně ' + d[0].properties[cuts[topic][2]] + ' dětí'
                 }
-                            
+
             document.getElementById('legend').innerHTML = txt
-            
+
         } else {
             document.getElementById('legend').innerHTML = '<b>Vyberte oblast v mapě.</b>'
         }
@@ -105,11 +105,11 @@ map.on('load', function() {
         var sel_topic = e.target.selectedOptions[0].value;
         topic = sel_topic;
         var stl = [
-            'case', 
+            'case',
             ['has', cuts[topic][0]],
                 [
-                    'interpolate', 
-                    ['linear'], 
+                    'interpolate',
+                    ['linear'],
                     ['/', ['get', cuts[topic][0]], ['get', cuts[topic][1]]],
                     breaks[topic][0], colors[topic][0],
                     breaks[topic][1], colors[topic][1],
@@ -132,7 +132,7 @@ map.on('moveend', function(e) { // poloha do url pro sdileni
   var cen = map.getCenter().wrap();
   window.history.pushState('', '', window.location.pathname + '?latlng=' + cen.lat + '|' + cen.lng + '|' + map.getZoom());
 });
-  
+
 $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", "black"));
   // geocoder
   const form = document.getElementById("frm-geocode");
@@ -163,3 +163,57 @@ $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", 
       }, "xml");
     }
   };
+
+var databyty = [
+  ["Ostrava",12803,44,82,"995","350"],
+  ["Brno",28551,75,48,"571/499","274/199"],
+  ["Praha*",34000 (8126),26,"- (27)","536","203"],
+  ["Ústí nad Labem",628,7,"-","307","131"],
+  ["Karviná",767,14,0,"231","83/48"],
+  ["Havířov",7667,106,0,"202","19/22"],
+  ["Kladno",1970,29,13,"219","124"],
+  ["Most",252,4,8,"174","14/6"],
+  ["Olomouc",1520,15,5,"165","74"],
+  ["Příbram",606,18,12,"158","135"],
+  ["Chomutov",283,6,10,"125/1022","29/22"],
+  ["Liberec",1219,12,98,"127/87","39/22"],
+  ["Kolín",1851,59,12,"139","98/43"],
+  ["Plzeň",2979,17,7,"133","76/48"],
+  ["Hradec Králové",1240,13,7,"126/72","58/57"],
+  ["Teplice",353,7,0,"111","6"],
+  ["Prostějov",1146,26,24,"115","34/42"],
+  ["Přerov",1427,33,10,"107/58","43/35"],
+  ["Děčín",645,13,0,"97/83","7/9"],
+  ["České Budějovice",1818,9,87,"103","56/75"],
+  ["Louny",145,8,0,"89","42"],
+  ["Karlovy Vary",203,4,0,"88","48/51"],
+  ["Česká Lípa",443,12,0,"84","42"],
+  ["Chrudim",467,20,60,"74/121","43/60"],
+  ["Litoměřice",217,9,0,"52","31/49"]
+]
+
+$(document).ready(function() {
+  $('#byty').DataTable({
+    data: databyty,
+    columns: [
+      { title: "Město" },
+      { title: "Městské byty" },
+      { title: "Městské byty/1000 obyv." },
+      { title: "Přidělené soc. byty (2017)" },
+      { title: "Rodiny s dětmi v byt. nouzi**" },
+      { title: "Rodiny s dětmi v azyl. dom./ubyt." }
+    ],
+    columnDefs: [
+      { targets: 0, type: 'diacritics-neutralise' }
+    ],
+    "order": [[ 2, "desc" ]],
+    "responsive": true,
+    "ordering": true,
+    "searching": false,
+    "paging": false,
+    "bInfo": false,
+    "language": {
+      "url": "https://interaktivni.rozhlas.cz/tools/datatables/Czech.json"
+    }
+  });
+});

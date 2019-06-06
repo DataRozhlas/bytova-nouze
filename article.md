@@ -1,12 +1,13 @@
-title: "Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze"
-perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
-coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
-coverimg_note: "Foto <a href='https://ctk.cz'>ČTK</a>"
+title: "XXX"
+perex: "XXX"
+coverimg: https://www.irozhlas.cz/sites/default/files/styles/zpravy_snowfall/public/uploader/vlastimil_02_180926-082621_mda.jpg?itok=FXyrfZ4N
+coverimg_note: "Ubytovna v Ústí nad Labem. Foto Michaela Danelová, iROZHLAS.cz"
 styles: ['https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css']
-libraries: ['https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js', jquery]
-options: [noheader] #wide, noheader (, nopic)
+libraries: ['https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js', jquery, datatables, "https://cdn.datatables.net/plug-ins/1.10.19/sorting/diacritics-sort.js"]
+options: []
 ---
- Nějaký písmena.
+
+Nějaký písmena.
 
 <wide>
 <select id="topic_select">
@@ -26,3 +27,9 @@ options: [noheader] #wide, noheader (, nopic)
 </wide>
 
 Další písmena po mapě.
+
+<wide>
+<div id="byty">
+	<table id="tabulkaPref" style="width:100%; margin-bottom: 25px"></table>
+</div>
+</wide>
