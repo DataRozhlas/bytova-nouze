@@ -1,4 +1,5 @@
-﻿import { breaks } from "./breaks";
+﻿
+import { breaks } from "./breaks";
 
 var host = 'https://data.irozhlas.cz'
 if (window.location.hostname == 'localhost') {
@@ -165,31 +166,61 @@ $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", 
   };
 
 var databyty = [
-  ["Ostrava",12803,44,82,"995","350"],
+  ["Ostrava",12803,44,82,"995/-","350/-"],
   ["Brno",28551,75,48,"571/499","274/199"],
-  ["Praha*",34000 (8126),26,"- (27)","536","203"],
-  ["Ústí nad Labem",628,7,"-","307","131"],
-  ["Karviná",767,14,0,"231","83/48"],
-  ["Havířov",7667,106,0,"202","19/22"],
-  ["Kladno",1970,29,13,"219","124"],
-  ["Most",252,4,8,"174","14/6"],
-  ["Olomouc",1520,15,5,"165","74"],
-  ["Příbram",606,18,12,"158","135"],
+  ["Praha<sup><a href='#note1'>1</a></sup>","34000 (8126)",26,"- (27)","536/-","203/-"],
+  ["Ústí nad Labem",628,7,"-","307/-","131/-"],
+  ["Karviná",767,14,0,"231/-","83/48"],
+  ["Havířov",7667,106,0,"202/-","19/22"],
+  ["Kladno",1970,29,13,"219/-","124/-"],
+  ["Most",252,4,8,"174/-","14/6"],
+  ["Olomouc",1520,15,5,"165/-","74/-"],
+  ["Příbram",606,18,12,"158/-","135/-"],
   ["Chomutov",283,6,10,"125/1022","29/22"],
   ["Liberec",1219,12,98,"127/87","39/22"],
-  ["Kolín",1851,59,12,"139","98/43"],
-  ["Plzeň",2979,17,7,"133","76/48"],
+  ["Kolín",1851,59,12,"139/-","98/43"],
+  ["Plzeň",2979,17,7,"133/-","76/48"],
   ["Hradec Králové",1240,13,7,"126/72","58/57"],
-  ["Teplice",353,7,0,"111","6"],
-  ["Prostějov",1146,26,24,"115","34/42"],
+  ["Teplice",353,7,0,"111/-","6/-"],
+  ["Prostějov",1146,26,24,"115/-","34/42"],
   ["Přerov",1427,33,10,"107/58","43/35"],
   ["Děčín",645,13,0,"97/83","7/9"],
-  ["České Budějovice",1818,9,87,"103","56/75"],
-  ["Louny",145,8,0,"89","42"],
-  ["Karlovy Vary",203,4,0,"88","48/51"],
-  ["Česká Lípa",443,12,0,"84","42"],
+  ["České Budějovice",1818,9,87,"103/-","56/75"],
+  ["Louny",145,8,0,"89/-","42/-"],
+  ["Karlovy Vary",203,4,0,"88/-","48/51"],
+  ["Česká Lípa",443,12,0,"84/-","42/-"],
   ["Chrudim",467,20,60,"74/121","43/60"],
-  ["Litoměřice",217,9,0,"52","31/49"]
+  ["Litoměřice",217,9,0,"52/-","31/49"]
+]
+
+var datamesta = [
+  ["Ostrava",1000,7070,2190,2410,950,870],
+  ["Brno-město",570,3550,1230,1340,430,220],
+  ["Ústí nad Labem",310,1890,630,760,250,60],
+  ["Karviná",230,1510,520,450,220,180],
+  ["Kladno",220,1440,540,420,140,210],
+  ["Havířov",200,1250,430,290,290,120],
+  ["Olomouc",170,1590,390,640,140,280],
+  ["Most",170,1250,360,490,230,60],
+  ["Příbram",160,930,330,370,40,100],
+  ["Liberec",130,960,280,270,130,200],
+  ["Chomutov",130,890,260,320,140,90],
+  ["Plzeň",130,860,300,330,90,70],
+  ["Hradec Králové",130,830,260,290,100,100],
+  ["Praha 10",110,1760,240,350,80,930],
+  ["Přerov",110,720,220,310,90,30],
+  ["Karlovy Vary",90,740,190,280,60,140],
+  ["Frýdek-Místek",90,680,200,160,120,140],
+  ["Sokolov",60,610,130,160,80,190],
+  ["Praha 8",50,1370,100,210,50,880],
+  ["Praha 4",50,1120,90,100,60,760],
+  ["Praha 5",50,980,100,160,40,590],
+  ["Praha 3",40,1660,80,170,40,1210],
+  ["Praha 2",30,990,80,160,40,620],
+  ["Praha 6",30,860,60,130,40,550],
+  ["Praha 4 (Praha 11)",30,590,50,90,30,360],
+  ["Praha 5 (Praha 13)",30,540,60,120,20,290],
+  ["Praha 8 (Praha 7)",20,550,40,110,20,320]
 ]
 
 $(document).ready(function() {
@@ -200,13 +231,34 @@ $(document).ready(function() {
       { title: "Městské byty" },
       { title: "Městské byty/1000 obyv." },
       { title: "Přidělené soc. byty (2017)" },
-      { title: "Rodiny s dětmi v byt. nouzi**" },
-      { title: "Rodiny s dětmi v azyl. dom./ubyt." }
+      { title: "Rodiny s dětmi v byt. nouzi<sup><a href='#note2'>2</a></sup>" },
+      { title: "Rodiny s dětmi v azyl. dom./ubyt.<sup><a href='#note2'>2</a></sup>" }
     ],
-    columnDefs: [
-      { targets: 0, type: 'diacritics-neutralise' }
+    "order": [[ 3, "desc" ]],
+    "responsive": true,
+    "ordering": true,
+    "searching": false,
+    "paging": false,
+    "bInfo": false,
+    "language": {
+      "url": "https://interaktivni.rozhlas.cz/tools/datatables/Czech.json"
+    }
+  });
+});
+
+$(document).ready(function() {
+  $('#mesta').DataTable({
+    data: datamesta,
+    columns: [
+      { title: "Úřad práce" },
+      { title: "Rodiny v bytové nouzi" },
+      { title: "Osoby v bytové nouzi" },
+      { title: "Děti v bytové nouzi" },
+      { title: "Domácnosti v ubyt./azyl. domech" },
+      { title: "Domácnosti v nevhodných bytech" },
+      { title: "Domácnosti bez přístřeší" }
     ],
-    "order": [[ 2, "desc" ]],
+    "order": [[ 1, "desc" ]],
     "responsive": true,
     "ordering": true,
     "searching": false,
