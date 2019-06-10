@@ -30,13 +30,22 @@ Odpovědi naznačuje mapa, vytvořená na základě dat [Platformy pro sociáln�
 
 <small>Zdroj dat: Platforma pro sociální bydlení, Lumos</small>
 
-<small>Data za obce s rozšířenou působností Aš, Říčany, Sedlčany, Tachov a Vizovice v mapě chybí. Důvodem je XXX.</small>
-
 <small>_Rodiny v bytové nouzi_ zahrnují rodiny v ubytovnách, azylových domech, v nevyhovujících bytech se zásadními nedostatky (nefunkční voda, elektřina, hygienická zařízení, zdraví škodlivé byty), v přelidněných bytech u příbuzných a známých, v improvizovaném bydlení (zahradní domku, stanu, sklepě, garáži, a podobně) nebo bez domova.</small>
 
 <small>Základem datové vrstvy jsou informace úřadů práce o tom, kolik rozdělily dávek v hmotné nouzi: příspěvků na živobytí a doplatků na bydlení. Pro zpřesnění výzkumníci využili jednak anonymizovaná data o klientech největších poskytovatelů sociálních služeb – Armády spásy, Člověka v tísni, Naděje a Slezské diakonie –, jednak data ze sčítání domácností bez domova v Brně a Liberci. Podrobně se sběru dat a metodologii věnují <a href="https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf">přílohy analýzy</a>.</small>
 
 „Celkem se v závažné bytové nouzi nachází 83 tisíc osob žijících v 54 tisících domácnostech,“ shrnuje čísla [Zpráva o vyloučení z bydlení za rok 2018](https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf). Analýza je podle jejích autorů první dokument za posledních třicet let, který nabízí takto detailní data o bytové nouzi v Česku.
+
+<right>
+<h4>Bytová nouze v číslech</h4>
+<ul style="font-size: 13px !important">
+<li>v závažné bytové nouzi se nachází 83 tisíc osob v 54 tisících domácnostech</li>
+<li>z toho je přibližně 20 500 nezletilých dětí</li>
+<li>17 900 domácností žije na ubytovnách, 3 200 v azylových domech, 16 600 bez střechy nad hlavou</li>
+<li>téměř polovina osob bez domova – 8 164 – žije v Praze</li>
+<li>každoročně se do bytové nouze dostane téměř 12 tisíc domácností, některé opakovaně</li>
+</ul>
+</right>
 
 „Čísla na první pohled můžou vypadat nízká,“ komentuje závěry zprávy ředitel Platformy pro sociální bydlení Vít Lesák. „Je to tím, že nesledujeme ledajakou, ale jen skutečně závažnou bytovou nouzi: rodiny rozstrkané po ubytovnách, azylových domech, v bytech bez základního vybavení nebo bez střechy nad hlavou. Můžu s jistotou říct, že každá domácnost v mapě je v těžké situaci a neobejde se bez pomoci zvnějšku.“
 
@@ -58,13 +67,13 @@ Naopak na Vysočině, ve východních Čechách nebo na jihu Moravy je rodin bez
 
 „Rodiny v nouzi jsou častěji ve městech, protože...,“ říká sociolog XXX
 
-## XXX
+## Města o chudých rodinách nemají přehled
 
 „Další důležitá zpráva – i když tu z mapy nevyčtete – je ta, že města o rodinách v bytové nouzi obvykle moc neví,“ doplňuje ke zprávě Vít Lesák z Platformy pro sociální bydlení. „Většinou neplatí, že místní samospráva zná situaci ve svých obcích nejlépe.“
 
 „Je to důležité proto, že právě znalost lokálních podmínek se většinou udává jako hlavní důvod, proč by bytovou nouzi měla řešit obec, ta je problému nejblíž. U většiny měst ale tenhle předpoklad neplatí. Samozřejmě jsou výjimky, kde mají bytovou nouzi slušně zmapovanou: kromě Brna taky Liberec, Hradec Králové nebo Přerov,“ doplňuje Lesák.
 
-Největší část ze šestiměsíčního shromažďování dat výzkumníci věnovali právě získávání informací od jednotlivých obcí. Oslovili 25 měst, ve kterých žije nejvíce rodin s dětmi v bytové nouzi. Zajímala je velikost bytového fondu, počet rodin v různých formách bytové nouze a počet bytů, které jim byly přiděleny.
+Největší část ze šestiměsíčního shromažďování dat výzkumníci věnovali právě získávání informací od jednotlivých obcí. Oslovili 25 měst, ve kterých žije nejvíce rodin s dětmi v bytové nouzi. Zajímala je velikost bytového fondu, počet rodin v různých formách bytové nouze a počet bytů, které jim byly přiděleny. Tedy možnosti jednotlivých obcí poskytnout rodinám v nouzi přijatelné bydlení.
 
 <h3>Bytový fond</h3>
 
@@ -87,29 +96,24 @@ Poslední dva sloupce ilustrují právě to, že řada obcí nemá o svých klie
 
 Podle publikace Zpráva o vyloučení z bydlení za rok 2018 se rodiny v závažné bytové nouzi k městským bytům dostanou jen vzácně: pokud obec sociální byty vůbec nabízí, jen asi 15 procent z nich získají rodiny v závažné bytové nouzi.
 
+## Bezdoplatkové zóny už zavedlo padesát měst
+
+Mapa prozrazuje také to, že ubytovny a azylové domy se příliš nepřekrývají s regiony, které bytová nouze trápí nejvíc.
+
+„Azylové domy jsou sociální služba, provozují je charity, mají lidem pomáhat. Není to sice plnohodnotné bydlení, ale aspoň něco,“ říká Vít Lesák. „Naproti tomu ubytovny pro rodiny, které tam bydlí, žádnou pomocí nejsou, je s nimi spojené spíš riziko a problémy.“
+
+Ubytovny jsou úzce propojeny s doplatky na bydlení, které vyplácí úřady práce rodinám s nejnižšími příjmy. Ty často peníze vůbec nespatří – dávky nezřídka putují rovnou k majiteli ubytovny.
+
+„Platím 12k za 15m2,“ říká paní z brněnské ubytovny XXX.
+
+Obce proti ubytovnám bojují takzvanými bezdoplatkovými zónami, kde doplatek na bydlení neproplácejí. Analýza Platformy pro sociální bydlení ovšem upozorňuje, že takový krok více problémů vyvolá, než řeší.
+
+„K listopadu 2018 mělo bezdoplatkové zóny na svém území již 52 obcí. Bezdoplatkové zóny však nevedou ke snížení bytové nouze, ale podle indicií z lokalit pravděpodobně přispívají k nucené migraci těchto osob a ke ztrátě sociálního zázemí. Hrozí také, že se k nejohroženějším nedostanou potřebné dávky na bydlení,“ tvrdí autoři publikace.
+
+„V posledních letech významně klesá počet vyplacených doplatků na bydlení,“ pokračují výzkumníci. „Řada lidí to interpretuje tak, že se dávky konečně dostanou jen k těm potřebným, a zároveň dochází ke snižování počtu domácností v bytové nouzi. Tak to ale není. Naše šetření ukázalo, že doplatek na bydlení pobírá jen přibližně 60 procent rodin a 40 procent bezdětných domácností žijících na ubytovnách – tedy domácností nacházejících se v závažné bytové nouzi.“
+
+<graf suma doplatků na bydlení>
+
 ## XXX
 
-Mapa ukazuje také to, že ubytovny a azylové domy se příliš nepřekrývají s rodinami v bytové nouzi.
-
-
-Zejména obce s vysokou koncentrací osob v bytové nouzi v současnosti zpravidla sahají k neefektivním restriktivním krokům, jako je vyhlášení bezdoplatkové zóny. K listopadu 2018 mělo bezdoplatkové zóny na svém území již 52 obcí. Bezdoplatkové zóny však nevedou ke snížení bytové nouze, ale podle indicií z lokalit pravděpodobně přispívají k nucené migraci těchto osob, ke ztrátě sociálního zázemí a také hrozí, že se k nejohroženějším nedostanou potřebné dávky na bydlení.
-
-Analyzovaná data navíc ukazují silnou regionální nerovnost mezi přístupem nejen samospráv, ale i státní správy. Například při vyplácení dávky MOP na kauci úspěšnost žadatelů osciluje mezi 25 a 90 %. Zavádějící je často nekriticky pozitivní interpretace trendu posledních let, kdy významně klesá počet vyplacených dávek na bydlení. To je samo o sobě nepochybně pravda, ale nelze vyvozovat, že se proto dávky začínají dostávat opravdu jen k těm potřebným ani že přímou měrou dochází ke snižování počtu domácností v bytové nouzi. Naše rozsáhlé šetření ukázalo, že doplatek na bydlení pobírá jen přibližně 60 % rodin a 40 % bezdětných domácností žijících na ubytovnách – tedy z domácností nacházejících se v závažné bytové nouzi.
-
-
-
-
-Zejména jde o 20 tisíc nezletilých dětí, které vyrůstají v 10 tisících rodinách v závažné bytové nouzi. Alarmující je také 70% nárůst počtu domácností s osobami nad 65 let žijících na ubytovnách mezi lety 2015 a 2018.
-
-Do bytové nouze se každoročně dostává přibližně 11 700 domácností.
- Neplatí však, že každý rok se do bytové nouze dostane 11 700 nových domácností. Mnoho domácností se dostává do bytové nouze opakovaně. Například rodiny, které pendlují mezi různými formami nejistého bydlení, či lidé po výkonu trestu, kteří se po propuštění z výkonu trestu dostanou do bytové nouze, opětovně skončí ve vězení a po ukončení výkonu trestu se znovu dostávají do bytové nouze.
-
-
-
-## XXX
-
-že počty ubytoven a azylových domů se příliš neprotínají s tím, kolik rodin v oblasti nemá bydlení,“ dodává Lesák. „Jinými slovy, tyhle instituce s řešením bydlení nemají mnoho společného.“
-
-a další pointa je že se to ještě nikdo nepokusil kvalitně zmapovat na úroveň měst, často to byly jen vágní odhady na úroveň celé čr. navíc my to máme i na subkategorie (azyl, ubytovny..). stejně jako u exekucí výrazně líp funguje, když se to takto rozdělí do mapy a lidi se můžou podívat na své město.
-
-
+Tady napojím brněnskou linku, XXX
