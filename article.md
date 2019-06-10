@@ -34,8 +34,8 @@ Odpovědi naznačuje mapa, vytvořená na základě dat [Platformy pro sociáln�
 <div class="b-inline__wrap">
 <div class="b-inline__content">
 <div class="text-sm">
+<h4>Poznámky k mapě</h4>
 <p><b>Rodiny v bytové nouzi</b> zahrnují rodiny v ubytovnách, azylových domech, v nevyhovujících bytech se zásadními nedostatky (nefunkční voda, elektřina, hygienická zařízení, zdraví škodlivé byty), v přelidněných bytech u příbuzných a známých, v improvizovaném bydlení (zahradní domku, stanu, sklepě, garáži, a podobně) nebo bez domova.</p>
-
 <p>Základem datové vrstvy jsou informace úřadů práce o tom, kolik rozdělily dávek v hmotné nouzi: příspěvků na živobytí a doplatků na bydlení. Pro zpřesnění výzkumníci využili jednak anonymizovaná data o klientech největších poskytovatelů sociálních služeb – Armády spásy, Člověka v tísni, Naděje a Slezské diakonie –, jednak data ze sčítání domácností bez domova v Brně a Liberci. Podrobně se sběru dat a metodologii věnují <a href="https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf">přílohy analýzy</a>.</p>
 </ul>
 </div></div></div></div>
