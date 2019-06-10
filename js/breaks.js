@@ -1,1 +1,1 @@
-export const breaks = {"Rodiny v bytové nouzi": [0.003, 0.0058, 0.0099, 0.0152, 0.0225], "Rodiny na ubytovnách": [0.0006, 0.0018, 0.0037, 0.0062, 0.0109], "Rodiny v azylových domech": [0.0002, 0.0009, 0.0016, 0.0028, 0.0041], "Osoby bez přístřeší": [0.0006, 0.0011, 0.0017, 0.0025, 0.0041]}
+export const breaks = {"Rodiny v bytové nouzi": [0.003, 0.0058, 0.0097, 0.0152, 0.0225], "Rodiny na ubytovnách": [0.0006, 0.0021, 0.0041, 0.0062, 0.0109], "Rodiny v azylových domech": [0.0002, 0.0009, 0.0016, 0.0028, 0.0041], "Osoby bez přístřeší": [0.0006, 0.0011, 0.0017, 0.003, 0.0047]}

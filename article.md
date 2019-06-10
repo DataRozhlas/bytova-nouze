@@ -28,22 +28,28 @@ Odpovědi naznačuje mapa, vytvořená na základě dat [Platformy pro sociáln�
 <div id="legend"><b>Vyberte oblast v mapě</b></div>
 </wide>
 
-<small>Zdroj dat: Platforma pro sociální bydlení, Lumos</small>
+<br>
 
-<small>_Rodiny v bytové nouzi_ zahrnují rodiny v ubytovnách, azylových domech, v nevyhovujících bytech se zásadními nedostatky (nefunkční voda, elektřina, hygienická zařízení, zdraví škodlivé byty), v přelidněných bytech u příbuzných a známých, v improvizovaném bydlení (zahradní domku, stanu, sklepě, garáži, a podobně) nebo bez domova.</small>
+<div class="b-inline">
+<div class="b-inline__wrap">
+<div class="b-inline__content">
+<div class="text-sm">
+<p><b>Rodiny v bytové nouzi</b> zahrnují rodiny v ubytovnách, azylových domech, v nevyhovujících bytech se zásadními nedostatky (nefunkční voda, elektřina, hygienická zařízení, zdraví škodlivé byty), v přelidněných bytech u příbuzných a známých, v improvizovaném bydlení (zahradní domku, stanu, sklepě, garáži, a podobně) nebo bez domova.</p>
 
-<small>Základem datové vrstvy jsou informace úřadů práce o tom, kolik rozdělily dávek v hmotné nouzi: příspěvků na živobytí a doplatků na bydlení. Pro zpřesnění výzkumníci využili jednak anonymizovaná data o klientech největších poskytovatelů sociálních služeb – Armády spásy, Člověka v tísni, Naděje a Slezské diakonie –, jednak data ze sčítání domácností bez domova v Brně a Liberci. Podrobně se sběru dat a metodologii věnují <a href="https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf">přílohy analýzy</a>.</small>
+<p>Základem datové vrstvy jsou informace úřadů práce o tom, kolik rozdělily dávek v hmotné nouzi: příspěvků na živobytí a doplatků na bydlení. Pro zpřesnění výzkumníci využili jednak anonymizovaná data o klientech největších poskytovatelů sociálních služeb – Armády spásy, Člověka v tísni, Naděje a Slezské diakonie –, jednak data ze sčítání domácností bez domova v Brně a Liberci. Podrobně se sběru dat a metodologii věnují <a href="https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf">přílohy analýzy</a>.</p>
+</ul>
+</div></div></div></div>
 
 „Celkem se v závažné bytové nouzi nachází 83 tisíc osob žijících v 54 tisících domácnostech,“ shrnuje čísla [Zpráva o vyloučení z bydlení za rok 2018](https://www.ditearodina.cz/images/Zpr%C3%A1va-o-vylou%C4%8Den%C3%AD-z-bydlen%C3%AD-za-rok-2018.pdf). Analýza je podle jejích autorů první dokument za posledních třicet let, který nabízí takto detailní data o bytové nouzi v Česku.
 
 <right>
 <h4>Bytová nouze v číslech</h4>
 <ul style="font-size: 13px !important">
-<li>v závažné bytové nouzi se nachází 83 tisíc osob v 54 tisících domácnostech</li>
-<li>z toho je přibližně 20 500 nezletilých dětí</li>
-<li>17 900 domácností žije na ubytovnách, 3 200 v azylových domech, 16 600 bez střechy nad hlavou</li>
-<li>téměř polovina osob bez domova – 8 164 – žije v Praze</li>
-<li>každoročně se do bytové nouze dostane téměř 12 tisíc domácností, některé opakovaně</li>
+	<li>v závažné bytové nouzi se nachází 83 tisíc osob v 54 tisících domácnostech</li>
+	<li>z toho je přibližně 20 500 nezletilých dětí</li>
+	<li>17 900 domácností žije na ubytovnách, 3 200 v azylových domech, 16 600 bez střechy nad hlavou</li>
+	<li>téměř polovina osob bez domova – 8 164 – žije v Praze</li>
+	<li>každoročně se do bytové nouze dostane téměř 12 tisíc domácností, některé opakovaně</li>
 </ul>
 </right>
 
@@ -59,7 +65,7 @@ Mapa podle Lesáka prozrazuje, že bytová nouze – obvykle spojovaná s chudý
 
 <wide>
 <div id="mestaid">
-	<table id="mesta" style="width:100%; margin-bottom: 25px"></table>
+	<table id="mesta" class="display" style="width:100%; margin-bottom: 25px"></table>
 </div>
 </wide>
 
@@ -79,7 +85,7 @@ Největší část ze šestiměsíčního shromažďování dat výzkumníci vě
 
 <wide>
 <div id="bytyid">
-	<table id="byty" style="width:100%; margin-bottom: 25px"></table>
+	<table id="byty" class="display" style="width:100%; margin-bottom: 25px"></table>
 </div>
 </wide>
 

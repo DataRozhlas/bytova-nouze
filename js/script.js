@@ -21,7 +21,7 @@ map.fitBounds([[12.09,51.06],[18.87,48.55]]);
 map.addControl(new mapboxgl.NavigationControl());
 map.addControl(new mapboxgl.AttributionControl({
     compact: true,
-    customAttribution: 'obrazový podkres <a target="_blank" href="https://samizdat.cz">Samizdat</a>, data <a target="_blank" href="http://vdp.cuzk.cz/">ČÚZK</a> a <a target="_blank" href="http://volby.cz/">ČSÚ</a>',
+    customAttribution: 'obrazový podkres <a target="_blank" href="https://samizdat.cz">Samizdat</a>, data <a target="_blank" href="http://vdp.cuzk.cz/">ČÚZK</a>, <a target="_blank" href="https://www.czso.cz/">ČSÚ</a>, <a target="_blank" href="https://socialnibydleni.org/">Platforma pro sociální bydlení</a> a <a target="_blank" href="https://socialnibydleni.org/">Lumos</a>',
 }));
 
 map.scrollZoom.disable(); // zoom myší teprve až po interakci s mapou

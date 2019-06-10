@@ -25,5 +25,3 @@ geo['features'] = ftrs
 #%%
 with open('./tools/orp_data.json', 'w', encoding='utf-8') as f:
     f.write(json.dumps(geo, ensure_ascii=False))
-
-#%%
