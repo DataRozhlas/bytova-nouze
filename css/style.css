@@ -109,3 +109,12 @@
       display: none;
     }
   }
+
+  .audiobox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .audiobox .b-inline {
+    margin: 10px;
+  }
