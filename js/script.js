@@ -166,35 +166,36 @@ $("#inp-geocode").on("focus input", () => $("#inp-geocode").css("border-color", 
   };
 
 var databyty = [
-  ["Ostrava",12803,44,82,"995/-","350/-"],
-  ["Brno",28551,75,48,"571/499","274/199"],
-  ["Praha<sup><a href='#note1'>1</a></sup>","34000 (8126)",26,"- (27)","536/-","203/-"],
-  ["Ústí nad Labem",628,7,"-","307/-","131/-"],
-  ["Karviná",767,14,0,"231/-","83/48"],
-  ["Havířov",7667,106,0,"202/-","19/22"],
-  ["Kladno",1970,29,13,"219/-","124/-"],
-  ["Most",252,4,8,"174/-","14/6"],
-  ["Olomouc",1520,15,5,"165/-","74/-"],
-  ["Příbram",606,18,12,"158/-","135/-"],
-  ["Chomutov",283,6,10,"125/1022","29/22"],
-  ["Liberec",1219,12,98,"127/87","39/22"],
-  ["Kolín",1851,59,12,"139/-","98/43"],
-  ["Plzeň",2979,17,7,"133/-","76/48"],
-  ["Hradec Králové",1240,13,7,"126/72","58/57"],
-  ["Teplice",353,7,0,"111/-","6/-"],
-  ["Prostějov",1146,26,24,"115/-","34/42"],
-  ["Přerov",1427,33,10,"107/58","43/35"],
-  ["Děčín",645,13,0,"97/83","7/9"],
-  ["České Budějovice",1818,9,87,"103/-","56/75"],
-  ["Louny",145,8,0,"89/-","42/-"],
-  ["Karlovy Vary",203,4,0,"88/-","48/51"],
-  ["Česká Lípa",443,12,0,"84/-","42/-"],
-  ["Chrudim",467,20,60,"74/121","43/60"],
-  ["Litoměřice",217,9,0,"52/-","31/49"]
+  ["Ostrava",12800,44,null,1000,null,350,null],
+  ["Brno",28550,75,18,570,500,270,200],
+  ["Praha<sup><a href='#note'>*</a></sup>",34000,26,null,540,null,200,null],
+  ["Ústí nad Labem",630,7,null,310,null,130,null],
+  ["Karviná",770,14,0,230,null,80,50],
+  ["Havířov",7670,106,null,200,null,20,20],
+  ["Kladno",1970,29,null,220,null,120,null],
+  ["Most",250,4,3,170,null,10,10],
+  ["Olomouc",1520,15,4,170,null,70,null],
+  ["Příbram",610,18,10,160,null,140,null],
+  ["Chomutov",280,6,0,130,1020,30,20],
+  ["Liberec",1220,12,3,130,90,40,20],
+  ["Kolín",1850,59,2,140,null,100,40],
+  ["Plzeň",2980,17,null,130,null,80,50],
+  ["Hradec Králové",1240,13,3,130,70,60,60],
+  ["Teplice",350,7,0,110,null,10,null],
+  ["Prostějov",1150,26,3,120,null,30,40],
+  ["Přerov",1430,33,5,110,60,40,40],
+  ["Děčín",650,13,0,100,80,10,10],
+  ["České Budějovice",1820,9,null,100,null,60,80],
+  ["Louny",150,8,0,90,null,40,null],
+  ["Karlovy Vary",200,4,0,90,null,50,50],
+  ["Česká Lípa",440,12,7,80,null,40,null],
+  ["Chrudim",470,20,0,70,120,40,60],
+  ["Litoměřice",220,9,null,50,null,30,50]
 ]
 
 var datamesta = [
   ["Ostrava",1000,7070,2190,2410,950,870],
+  ["Praha",540,12100,1110,1950,510,7350],
   ["Brno-město",570,3550,1230,1340,430,220],
   ["Ústí nad Labem",310,1890,630,760,250,60],
   ["Karviná",230,1510,520,450,220,180],
@@ -207,21 +208,17 @@ var datamesta = [
   ["Chomutov",130,890,260,320,140,90],
   ["Plzeň",130,860,300,330,90,70],
   ["Hradec Králové",130,830,260,290,100,100],
-  ["Praha 10",110,1760,240,350,80,930],
   ["Přerov",110,720,220,310,90,30],
   ["Karlovy Vary",90,740,190,280,60,140],
   ["Frýdek-Místek",90,680,200,160,120,140],
-  ["Sokolov",60,610,130,160,80,190],
-  ["Praha 8",50,1370,100,210,50,880],
-  ["Praha 4",50,1120,90,100,60,760],
-  ["Praha 5",50,980,100,160,40,590],
-  ["Praha 3",40,1660,80,170,40,1210],
-  ["Praha 2",30,990,80,160,40,620],
-  ["Praha 6",30,860,60,130,40,550],
-  ["Praha 4 (Praha 11)",30,590,50,90,30,360],
-  ["Praha 5 (Praha 13)",30,540,60,120,20,290],
-  ["Praha 8 (Praha 7)",20,550,40,110,20,320]
-]
+  ["Sokolov",60,610,130,160,80,190]
+];
+
+var chartcolors = ['#EA614A','#ECA038','#A38456','#008836','#20649B','#6B96CA','#A87A93','#D19C95'];
+
+var datadoplatky = [53.2,58.3,61.5,66.1,67,62.5,66.4,66.4,64.4,69.8,67.6,77.8,70.7,73.4,74.8,74.5,75.5,71.8,71.8,69,69.2,72.1,70.1,76.3,66.1,68.8,81.8,76.5,73.4,69.2,71.1,64.3,65.9,66.7,67.4,73.9,64.3,67.7,69,68.7,69,63.8,61,59.6,59.6,60.9,62.5,64.9,58.1,55.3,64.4,56.8,58.9,51.7,48.5,50.4,44.4,51.1,49.3,50,45.2,44,44.9,43.5,42.6,39.1,37.2,36.8,33.2,39.3,37.5,44.3];
+
+var mesice = ["01/2013","02/2013","03/2013","04/2013","05/2013","06/2013","07/2013","08/2013","09/2013","10/2013","11/2013","12/2013","01/2014","02/2014","03/2014","04/2014","05/2014","06/2014","07/2014","08/2014","09/2014","10/2014","11/2014","12/2014","01/2015","02/2015","03/2015","04/2015","05/2015","06/2015","07/2015","08/2015","09/2015","10/2015","11/2015","12/2015","01/2016","02/2016","03/2016","04/2016","05/2016","06/2016","07/2016","08/2016","09/2016","10/2016","11/2016","12/2016","01/2017","02/2017","03/2017","04/2017","05/2017","06/2017","07/2017","08/2017","09/2017","10/2017","11/2017","12/2017","01/2018","02/2018","03/2018","04/2018","05/2018","06/2018","07/2018","08/2018","09/2018","10/2018","11/2018","12/2018"];
 
 $(document).ready(function() {
   $('#byty').DataTable({
@@ -230,15 +227,17 @@ $(document).ready(function() {
       { title: "Město" },
       { title: "Městské byty" },
       { title: "Městské byty/1000 obyv." },
-      { title: "Přidělené soc. byty (2017)" },
-      { title: "Rodiny s dětmi v byt. nouzi<sup><a href='#note2'>2</a></sup>" },
-      { title: "Rodiny s dětmi v azyl. dom./ubyt.<sup><a href='#note2'>2</a></sup>" }
+      { title: "Byty přidělené rodinám z azyl.dom./ubyt. (2017)" },
+      { title: "Rodiny s dětmi v byt. nouzi, odhad Platformy" },
+      { title: "Rodiny s dětmi v byt. nouzi, údaje města" },
+      { title: "Rodiny s dětmi v azyl. dom./ubyt., odhad Platformy" },
+      { title: "Rodiny s dětmi v azyl. dom./ubyt., údaje města" },
     ],
     "order": [[ 3, "desc" ]],
     "responsive": true,
     "ordering": true,
     "searching": false,
-    "paging": false,
+    "paging": true,
     "bInfo": false,
     "language": {
       "url": "https://interaktivni.rozhlas.cz/tools/datatables/Czech.json"
@@ -250,7 +249,7 @@ $(document).ready(function() {
   $('#mesta').DataTable({
     data: datamesta,
     columns: [
-      { title: "Úřad práce" },
+      { title: "Město" },
       { title: "Rodiny v bytové nouzi" },
       { title: "Osoby v bytové nouzi" },
       { title: "Děti v bytové nouzi" },
@@ -262,10 +261,65 @@ $(document).ready(function() {
     "responsive": true,
     "ordering": true,
     "searching": false,
-    "paging": false,
+    "paging": true,
     "bInfo": false,
     "language": {
       "url": "https://interaktivni.rozhlas.cz/tools/datatables/Czech.json"
     }
   });
 });
+
+$(document).ready(function() {
+
+Highcharts.chart('doplatky', {
+    chart: {
+        type: 'column'
+    },
+
+    title: {
+        text: 'Vyplacené doplatky na bydlení'
+    },
+
+    xAxis: {
+        categories: mesice
+    },
+
+    yAxis: {
+        title: {
+            text: 'Počet doplatků'
+        },
+        labels: {
+            formatter: function () {
+                return this.value + ' tisíc';
+            }
+        },
+        max: 90,
+        endOnTick: false
+    },
+
+    tooltip: {
+        pointFormat: '<b>{point.y} tisíc</b> vyplacených doplatků na bydlení',
+    },
+
+    legend: {
+        enabled: false
+    },
+
+    exporting: {
+        enabled: false
+    },
+
+    credits: {
+        href: 'https://www.mpsv.cz/cs/15912',
+        text: 'Zdroj: MPSV'
+    },
+
+    series: [{
+        name: 'doplatky',
+        data: datadoplatky,
+        color: chartcolors[4]
+    }]
+});
+
+
+})
