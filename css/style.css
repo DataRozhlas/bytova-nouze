@@ -78,9 +78,9 @@
     position: absolute;
     bottom: 12px;
     left: 25px;
-    width: 55px;
+    width: 160px;
     text-align: center;
-    height: 120px;
+    height: 160px;
     background-color: white;
     border-color: #6c757d;
     border-radius: .25rem;
@@ -95,13 +95,13 @@
 
   #clr {
     background-image: linear-gradient(#a50f15, #fee5d9);
-    width: 80%;
+    width: 30%;
     display: inline-block;
     height: 50%;
   }
 
   #clr_min, #clr_max {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media only screen and (max-width: 600px) {

@@ -42,6 +42,13 @@ const colors = {
     'Osoby bez přístřeší': ['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c'],
 }
 
+const legend_popis = {
+  'Rodiny v bytové nouzi': 'Podíl rodin v bytové nouzi',
+  'Rodiny v ubytovnách': 'Podíl rodin na ubytovnách',
+  'Rodiny v azylových domech': 'Podíl rodin v azylových domech',
+  'Osoby bez přístřeší': 'Podíl osob bez přístřeší',
+}
+
 let topic = 'Rodiny v bytové nouzi'
 
 map.on('load', function() {
@@ -94,7 +101,6 @@ map.on('load', function() {
                 if (topic != 'Osoby bez přístřeší') {
                     txt += '<br>Celkem: ' + d[0].properties[cuts[topic][3]] + ' osob, z nich ' + d[0].properties[cuts[topic][2]] + ' dětí'
                 }
-
             document.getElementById('legend').innerHTML = txt
 
         } else {
@@ -122,7 +128,7 @@ map.on('load', function() {
         map.setPaintProperty('data', 'fill-color', stl);
         // legenda
         document.getElementById('clr').style['background-image'] = 'linear-gradient(' + colors[topic][4] +  ', ' + colors[topic][0] + ')'
-        document.getElementById('clr_min').innerHTML = Math.round(breaks[topic][0] * 10000) / 100 + ' %'
+        document.getElementById('clr_min').innerHTML = Math.round(breaks[topic][0] * 10000) / 100 + ' %<br>' + legend_popis[topic]
         document.getElementById('clr_max').innerHTML = Math.round(breaks[topic][4] * 10000) / 100 + ' %'
     });
     

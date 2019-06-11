@@ -28,7 +28,7 @@ Odpovědi naznačuje mapa, vytvořená na základě dat [Platformy pro sociáln�
 <div id="scale">
 <div id="clr_max">2.25 %</div>
 <div id="clr"></div>
-<div id="clr_min">0.3 %</div>
+<div id="clr_min">0.3 %<br>Podíl rodin v bytové nouzi</div>
 </div>
 <div id="legend"><b>Vyberte oblast v mapě</b></div>
 </wide>
@@ -87,7 +87,7 @@ Prvním českým městem, které zmapovalo rodiny bez střechy nad hlavou a čá
 <div class="audiobox">
 
 <!-- audio -->
-<div class="b-inline">
+<div class="b-inline b-inline--left">
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -135,7 +135,7 @@ Prvním českým městem, které zmapovalo rodiny bez střechy nad hlavou a čá
 </div>
 
 <!-- audio -->
-<div class="b-inline">
+<div class="b-inline b-inline--left">
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -196,7 +196,7 @@ _(Text pokračuje pod audiem.)_
 <div class="audiobox">
 
 <!-- audio -->
-<div class="b-inline"><h3>Hodonín</h3>
+<div class="b-inline b-inline--left"><h3>Hodonín</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -245,7 +245,7 @@ _(Text pokračuje pod audiem.)_
 </div>
 
 <!-- audio -->
-<div class="b-inline"><h3>Jihlava</h3>
+<div class="b-inline b-inline--left"><h3>Jihlava</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -294,56 +294,7 @@ _(Text pokračuje pod audiem.)_
 </div>
 
 <!-- audio -->
-<div class="b-inline"><h3>Olomouc</h3>
-  <div class="b-inline__wrap">
-    <div class="b-audio-player js-audio">
-      <div class="js-out">
-        <audio controls="">
-          <source src="https://www.irozhlas.cz/sites/default/files/uploader_unmanaged/bytnouze_olomouc_190610-135248_cib.mp3" type="audio/mpeg">
-          Váš prohlížeč nepodporuje přehrávání audia.
-        </audio>
-      </div>
-      <div class="b-audio-player__controls">
-        <a href="#" class="b-audio-player__play play-btn">
-          Přehrát
-          <span class="icon-svg icon-svg--play ">
-    <svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-play" x="0" y="0" width="100%" height="100%"></use></svg>
-  </span>          <span class="icon-svg icon-svg--pause ">
-    <svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-pause" x="0" y="0" width="100%" height="100%"></use></svg>
-  </span>        </a>
-        <p class="b-audio-player__time">00:00 / 00:00</p>
-        <p class="b-audio-player__sound">
-          <span class="b-audio-player__mute">
-            <span class="icon-svg icon-svg--mute ">
-    <svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-mute" x="0" y="0" width="100%" height="100%"></use></svg>
-  </span>          </span>
-          <span class="b-audio-player__sound-bar">
-            <span class="icon-svg icon-svg--audio-player-dots ">
-    <svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-audio-player-dots" x="0" y="0" width="100%" height="100%"></use></svg>
-  </span>            <span class="b-audio-player__sound-progress" style="width: 100%;">
-              <span class="icon-svg icon-svg--audio-player-dots ">
-    <svg class="icon-svg__svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <use xlink:href="/sites/all/themes/custom/irozhlas/img/bg/icons-svg.svg#icon-audio-player-dots" x="0" y="0" width="100%" height="100%"></use></svg>
-  </span>            </span>
-          </span>
-        </p>
-        <div class="b-audio-player__bar">
-          <div class="b-audio-player__progress"></div>
-        </div>
-      </div>
-      <p class="b-audio-player__title">
-        XXX
-      </p>
-    </div>
-  </div>
-</div>
-
-<!-- audio -->
-<div class="b-inline"><h3>Plzeň</h3>
+<div class="b-inline b-inline--left"><h3>Plzeň</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -392,7 +343,7 @@ _(Text pokračuje pod audiem.)_
 </div>
 
 <!-- audio -->
-<div class="b-inline"><h3>Trutnov</h3>
+<div class="b-inline b-inline--left"><h3>Trutnov</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
