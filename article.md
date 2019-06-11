@@ -84,10 +84,10 @@ Prvním českým městem, které zmapovalo rodiny bez střechy nad hlavou a čá
 
 Český rozhlas před rokem [zmapoval radosti i problémy nových nájemníků](https://radiozurnal.rozhlas.cz/novy-zacatek-7295630), stejně jako kritiku opozice.
 
-<wide><div class="audiobox">
+<div class="audiobox">
 
 <!-- audio -->
-<div class="b-inline b-inline--left">
+<div class="b-inline">
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -135,7 +135,7 @@ Prvním českým městem, které zmapovalo rodiny bez střechy nad hlavou a čá
 </div>
 
 <!-- audio -->
-<div class="b-inline b-inline--left">
+<div class="b-inline">
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -183,7 +183,7 @@ Prvním českým městem, které zmapovalo rodiny bez střechy nad hlavou a čá
   </div>
 </div>
 
-</div></wide>
+</div>
 
 Brněnská iniciativa získala [ocenění Evropské komise](https://twitter.com/EUinmyRegion/status/917817250266181638) a nejstarší evropskou cenu za sociální inovace [SozialMarie](https://www.sozialmarie.org/assets/media/about-the-award-ceremony-2018-press.pdf). Pro její přijetí v Česku ale byla klíčová [závěrečná zpráva](https://drive.google.com/file/d/1B8WJuQ1PG5k7J6V_EAuU8SQgQhFDY2t5/view) výzkumníků Ostravské univerzity, sepsaná rok po zabydlení padesáti rodin.
 
@@ -191,11 +191,10 @@ Ta program zhodnotila jako jednoznačný úspěch – například původní cíl
 
 Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. Na úspěch zareagovalo titulem Podpora programu Housing first, ve kterém [rozděluje 150 milionů korun](https://www.esfcr.cz/vyzva-108-opz) z evropských dotací. Peníze jsou určené na platy sociálních pracovníků, kteří chudé lidi podporují v zabydlení, udržení bydlení a řešení dalších problémů chudých rodin. O příspěvek můžou žádat radnice nebo pomáhající organizace. Český rozhlas natáčel v pěti městech, které o peníze na sociální bydlení mají zájem.
 
-<wide>
 <div class="audiobox">
 
 <!-- audio -->
-<div class="b-inline b-inline--left"><h3>Hodonín</h3>
+<div class="b-inline"><h3>Hodonín</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -244,7 +243,7 @@ Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. N
 </div>
 
 <!-- audio -->
-<div class="b-inline b-inline--left"><h3>Jihlava</h3>
+<div class="b-inline"><h3>Jihlava</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -293,7 +292,7 @@ Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. N
 </div>
 
 <!-- audio -->
-<div class="b-inline b-inline--left"><h3>Olomouc</h3>
+<div class="b-inline"><h3>Olomouc</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -342,7 +341,7 @@ Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. N
 </div>
 
 <!-- audio -->
-<div class="b-inline b-inline--left"><h3>Plzeň</h3>
+<div class="b-inline"><h3>Plzeň</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -391,7 +390,7 @@ Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. N
 </div>
 
 <!-- audio -->
-<div class="b-inline b-inline--left"><h3>Trutnov</h3>
+<div class="b-inline"><h3>Trutnov</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
@@ -439,7 +438,7 @@ Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. N
   </div>
 </div>
 
-</div></wide>
+</div>
 
 V Brně se mezitím rozhořel spor o to, jestli a jak peníze nabízené ministerstvem využít pro pokračování programu. Program Rapid Re-housing byl dítětem hnutí Žít Brno, které ovšem v loňských komunálních volbách propadlo. Nová koalice, vedená ODS, s pozitivním vyzněním zprávy Ostravské univerzity nesouhlasí. Doplnila ji detailním rozpisem nákladů města [(příloha č. 3)](https://www.brno.cz/fileadmin/user_upload/sprava_mesta/magistrat_mesta_brna/ORGO/materialy-zmb/ZMB_Z8-05/MMB2019000000312.pdf), ve které uvádí téměř půlmilionový dluh rodin na nájemném, čtvrtmilionový dluh na platbách za komunální odpad, ale také ušlý zisk radnice oproti běžnému nájemnému. Dohromady vyčísluje náklady města na téměř tři a půl milionu korun.
 
