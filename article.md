@@ -191,6 +191,8 @@ Ta program zhodnotila jako jednoznačný úspěch – například původní cíl
 
 Brněnský program inspiroval také Ministerstvo práce a sociálních věcí. Na úspěch zareagovalo titulem Podpora programu Housing first, ve kterém [rozděluje 150 milionů korun](https://www.esfcr.cz/vyzva-108-opz) z evropských dotací. Peníze jsou určené na platy sociálních pracovníků, kteří chudé lidi podporují v zabydlení, udržení bydlení a řešení dalších problémů chudých rodin. O příspěvek můžou žádat radnice nebo pomáhající organizace. Český rozhlas natáčel v pěti městech, které o peníze na sociální bydlení mají zájem.
 
+_(Text pokračuje pod audiem.)_
+
 <div class="audiobox">
 
 <!-- audio -->
