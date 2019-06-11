@@ -1,5 +1,4 @@
-﻿
-import { breaks } from "./breaks";
+﻿import { breaks } from "./breaks";
 
 var host = 'https://data.irozhlas.cz'
 if (window.location.hostname == 'localhost') {
@@ -31,14 +30,14 @@ map.on("click", function(e) {
 
 const cuts = {
     'Rodiny v bytové nouzi': ['nouze_rodiny', 'rodin', 'nouze_deti', 'nouze_osoby'],
-    'Rodiny na ubytovnách': ['ubyt_rodiny', 'rodin', 'ubyt_deti', 'ubyt_osoby'],
+    'Rodiny v ubytovnách': ['ubyt_rodiny', 'rodin', 'ubyt_deti', 'ubyt_osoby'],
     'Rodiny v azylových domech': ['azyl_rodiny', 'rodin', 'azyl_deti', 'azyl_osoby'],
     'Osoby bez přístřeší': ['bezdom', 'POCET_OBYV'],
 }
 
 const colors = {
     'Rodiny v bytové nouzi': ['#fee5d9','#fcae91','#fb6a4a','#de2d26','#a50f15'],
-    'Rodiny na ubytovnách': ['#f2f0f7','#cbc9e2','#9e9ac8','#756bb1','#54278f'],
+    'Rodiny v ubytovnách': ['#f2f0f7','#cbc9e2','#9e9ac8','#756bb1','#54278f'],
     'Rodiny v azylových domech': ['#feebe2','#fbb4b9','#f768a1','#c51b8a','#7a0177'],
     'Osoby bez přístřeší': ['#eff3ff','#bdd7e7','#6baed6','#3182bd','#08519c'],
 }
@@ -93,7 +92,7 @@ map.on('load', function() {
             let txt = 'Obec s rozšířenou působností <b>' + d[0].properties.NAZ_ORP + '</b></br>'
                 + topic + ': ' + d[0].properties[cuts[topic][0]]
                 if (topic != 'Osoby bez přístřeší') {
-                    txt += ', tedy ' + d[0].properties[cuts[topic][3]] + ' osob včetně ' + d[0].properties[cuts[topic][2]] + ' dětí'
+                    txt += '<br>Celkem: ' + d[0].properties[cuts[topic][3]] + ' osob, z nich ' + d[0].properties[cuts[topic][2]] + ' dětí'
                 }
 
             document.getElementById('legend').innerHTML = txt
@@ -121,7 +120,12 @@ map.on('load', function() {
             'white',
         ]
         map.setPaintProperty('data', 'fill-color', stl);
+        // legenda
+        document.getElementById('clr').style['background-image'] = 'linear-gradient(' + colors[topic][4] +  ', ' + colors[topic][0] + ')'
+        document.getElementById('clr_min').innerHTML = Math.round(breaks[topic][0] * 10000) / 100 + ' %'
+        document.getElementById('clr_max').innerHTML = Math.round(breaks[topic][4] * 10000) / 100 + ' %'
     });
+    
     if (window.location.href.includes("latlng")){ //posunuti mapy dle url
         var ll = window.location.href.split("latlng=")[1].split('&')[0];
         map.setCenter([parseFloat(ll.split('|')[1]), parseFloat(ll.split('|')[0])]);

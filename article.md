@@ -25,6 +25,11 @@ Odpovědi naznačuje mapa, vytvořená na základě dat [Platformy pro sociáln�
 	</div>
 </form>
 <div id="map"></div>
+<div id="scale">
+<div id="clr_max">2.25 %</div>
+<div id="clr"></div>
+<div id="clr_min">0.3 %</div>
+</div>
 <div id="legend"><b>Vyberte oblast v mapě</b></div>
 </wide>
 

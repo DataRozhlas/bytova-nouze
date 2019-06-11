@@ -11,7 +11,7 @@ with open('./tools/orp_data.json', 'r', encoding='utf-8') as f:
 #%%
 cuts = {
     'Rodiny v bytové nouzi': ['nouze_rodiny', 'rodin'],
-    'Rodiny na ubytovnách': ['ubyt_rodiny', 'rodin'],
+    'Rodiny v ubytovnách': ['ubyt_rodiny', 'rodin'],
     'Rodiny v azylových domech': ['azyl_rodiny', 'rodin'],
     'Osoby bez přístřeší': ['bezdom', 'POCET_OBYV'],
 }
@@ -19,7 +19,7 @@ cuts = {
 #%%
 vls = {
     'Rodiny v bytové nouzi': [],
-    'Rodiny na ubytovnách': [],
+    'Rodiny v ubytovnách': [],
     'Rodiny v azylových domech': [],
     'Osoby bez přístřeší': [],
 }
