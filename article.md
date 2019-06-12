@@ -403,7 +403,7 @@ Současné vedení Brna s přihlášením do výzvy ministerstva váhá. Náměs
 
 Definitivně má o zapojení do programu rozhodnout brněnské zastupitelstvo v polovině června. Podrobně situaci ve městě, včetně důsledků pro další adepty na účast v ministerském programu Housing first, mapuje pořad [Zaostřeno na ČRo Plus](https://plus.rozhlas.cz/housing-first-dotacni-program-na-bydleni-pro-chude-inspirovalo-brno-s-jeho-7961586). Aktuální vývoj „v terénu“ ukazuje následující audio- a fotoreportáž.
 
-<div class="b-inline b-inline--left" style="width: 100%;"><h3>Brno, aktuálně</h3>
+<div class="b-inline" style="width: 100%;"><h3>Brno, aktuálně</h3>
   <div class="b-inline__wrap">
     <div class="b-audio-player js-audio">
       <div class="js-out">
